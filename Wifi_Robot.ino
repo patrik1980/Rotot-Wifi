@@ -34,20 +34,9 @@ void setup ()
 
   pinMode(led, OUTPUT);
 
-  //Serial.println("Test modulo L298");
-  //Serial.println("1 - Motore 1 Avanti");
-  //Serial.println("2 - Motore 1 STOP");
-  //Serial.println("3 - Motore 1 Indietro");
-  //Serial.println("4 - Motore 2 Avanti");
-  //Serial.println("5 - Motore 2 STOP");
-  //Serial.println("6 - Motore 2 Indietro");
-  //Serial.println("   ");
 }
 void loop ()
 {
-  //if (Serial.available() > 0) {
-   //char c = Serial.read();
-    //int speed; // Local variable
     int speed = 0;
     
     //switch (inByte) {
@@ -62,7 +51,6 @@ switch (c) {
   // if it's a capital H (ASCII 72), turn on the LED:
     case 'a': 
       // Dir. Avanti
-      //analogWrite(speedPinB, speed);//Imposta la velocità via PWM ok solo forzando da seriale USB
       //Motore A
       digitalWrite(speedPinA, HIGH);  
       digitalWrite(dir1PinA, LOW);   
